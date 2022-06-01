@@ -15,7 +15,7 @@ a{
 
 .img-topo{
     border-radius: 50px;
-    border: 1px solid brown;
+    border: 2px solid black;
 }
 #title, .subtitle,.post_title {
     color: #505050;
