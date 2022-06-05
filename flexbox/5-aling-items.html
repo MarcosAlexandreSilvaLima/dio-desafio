@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling-items</title>
+    <style>
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: aqua;
+            margin: 5px;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start;
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+          height: 300px;
+          justify-content: center;   
+        }
+    </style>
+</head>
+<body>
+    <p>direcao em linha- row</p>
+    <p>center</p>
+    <section class="container center flex ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">3</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container strech flex ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">teste teste teste teste teste</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">3</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">3</div>
+    </section>
+    
+    <p>baseline</p>
+    <section class="container baseline ">
+        <div class="item"><br>item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">teste teste teste testeteste teste teste </div>
+    </section>
+    
+    <p>direcao e coluna - column</p>
+    <p>center</p>
+    <section class="container center flex column ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">3</div>
+    </section>
+
+    <p>stretch</p>
+    <section class="container strech flex column ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">teste teste teste teste teste</div>
+    </section>
+
+    <p>flex-start</p>
+    <section class="container start column ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">3</div>
+    </section>
+
+    <p>flex-end</p>
+    <section class="container end column ">
+        <div class="item">item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">3</div>
+    </section>
+    
+    <p>baseline</p>
+    <section class="container baseline column ">
+        <div class="item"><br>item 1</div>
+        <div class="item">testando aling-items </div>
+        <div class="item">teste teste teste testeteste teste teste </div>
+    </section>
+
+    <section class="container central center">
+
+        <div class="item">
+            Lorem Ipsum é simplesmente um texto fictício da indústria tipográfica e de impressão. Lorem Ipsum tem sido o texto fictício padrão da indústria desde os anos 1500,
+        </div>
+    </section>
+</body>
+</html>

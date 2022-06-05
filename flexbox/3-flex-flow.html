@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fundamentos - flex flow</title>
+    <style>
+
+        .flex-container{
+            display: flex;
+            border:4px solid red;
+            max-width: 500px;
+            margin-bottom: 10px;
+
+        }
+        .defaut{
+            flex-flow: row nowrap ;
+        }
+        .item{
+            background-color: black;
+            margin: 5px;
+            color: white;
+            text-align: center;
+            line-height: 50px; /*alinha altura da linha*/
+            width: 100px;
+            height: 50px;
+        }
+
+        .wrap{
+            flex-flow: row wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>DEFAULT ROW NOWRAP</H1>
+    <div class="flex-container defaut">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    <h1>row wrap</h1>
+    <div class="flex-container wrap">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+</body>
+</html>
