@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-basis</title>
+    <style>
+        .container{
+            max-width: 400px;
+            border: 2px solid black;
+            display: flex;
+        }
+        .items{
+            background-color: coral;
+            color: black;
+            margin: 2px;
+            text-align: center;
+            
+        }
+        .bauto{
+            flex-basis: auto;
+
+        }
+        .basis0{
+            flex-basis: 0;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+        .fg2{
+            flex-grow: 2;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+        .wrap{
+            
+            flex-wrap: wrap;
+        }
+        .column{
+            
+            flex-direction: column;
+            max-height:400px;
+            max-width:400px;
+        }
+    </style>
+</head>
+<body>
+    <p>basis auto</p>
+    <div class="container ">
+        <div class="items bauto fg1 ">a</div>
+        <div class="items bauto fg1">bbbbbb</div>
+        <div class="items bauto fg1">c</div>
+        <div class="items bauto fg1">ddd</div>
+    </div>
+
+    <p>basis 0</p>
+    <div class="container ">
+        <div class="items basis0 fg1 ">a</div>
+        <div class="items basis0 fg1">bbbbbb</div>
+        <div class="items basis0 fg1">c</div>
+        <div class="items basis0 fg1">ddd</div>
+    </div>
+
+    <p>basis + width </p>
+    <div class="container  ">
+        <div class="items w100 fg1  ">a</div>
+        <div class="items w100 fg1">bbbbbb</div>
+        <div class="items w100 fg1">c</div>
+        <div class="items w100 fg1">ddd</div>
+    </div>
+    <p>basis + width + wrap</p>
+    <div class="container wrap  ">
+        <div class="items w100 fg1  ">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">dddddddddddddd</div>
+        <div class="items w100 fg1">ddddddddddddddd</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">dddddddddddddddddd</div>
+
+    </div>
+    
+    <p>basis + width + wrap + column</p>
+    <div class="container wrap column  ">
+        <div class="items w100 fg1  ">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">dddddddddddddd</div>
+        <div class="items w100 fg1">ddddddddddddddd</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">aaaaaaaaaaaaa</div>
+        <div class="items w100 fg1">dddddddddddddddddd</div>
+
+    </div>
+</body>
+</html>

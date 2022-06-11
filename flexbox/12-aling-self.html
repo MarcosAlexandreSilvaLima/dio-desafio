@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - aling self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 2px solid;
+            margin-bottom: 15px;
+            display: flex;
+        }
+        .aling-container{
+            align-items: center;
+        }
+        .item{
+            background-color: rebeccapurple;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="flex-container aling-container">
+        <div class="item auto">111</div>
+        <div class="item auto">123</div>
+        <div class="item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="item auto">bbb</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">111</div>
+        <div class="item  start">123</div>
+        <div class="item auto">lorem ipsum is therefore always free from repetition</div>
+        <div class="item auto end">bbb</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">111</div>
+        <div class="item  start">123</div>
+        <div class="item  end">bbbbbbbbbbbbbbb</div>
+        <div class="item  stretch">bbb lorem ipsum is therefore always free from repetitionlorem ipsum is therefore always free from repetition</div>
+    </section>
+</body>
+</html>

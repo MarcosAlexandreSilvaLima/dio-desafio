@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marcos Alexandre">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex-grow</title>
+    <style>
+        .container{
+            max-width: 300px;
+            background-color: black;
+            margin: 0 auto;
+            display: flex;
+            border: 2px solid firebrick;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        .fg0{
+            flex-grow: 0;
+        }
+        .fg1{
+            flex-grow: 1;
+        }
+        .fg2{
+            flex-grow: 2;
+        }
+        .fg3{
+            flex-grow: 3;
+        }
+        .center{
+            justify-content: center;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-grow 0</h1>
+    <div class="container center ">
+        <div class="item fg0">a</div>
+        <div class="item fg0">b</div>
+        <div class="item fg0">c</div>
+        <div class="item fg0">d</div>
+
+    </div>
+    <h1>flex-grow 1</h1>
+    <div class="container">
+        <div class="item fg1">uma</div>
+        <div class="item fg1">foto</div>
+        <div class="item fg1">bem</div>
+        <div class="item fg1">aqui</div>
+
+    </div>
+
+    <h1>flex-grow 2</h1>
+    <div class="container ">
+        <div class="item fg2">alho</div>
+        <div class="item fg2">abelha</div>
+        <div class="item fg3">cachorro</div>
+        <div class="item fg1">d</div>
+
+    </div>
+    
+</body>
+</html>
